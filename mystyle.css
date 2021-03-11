@@ -1,0 +1,65 @@
+
+  .parent{
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: whitesmoke;
+	padding:10px;
+	justify-content:space-between; 
+	
+}
+h1 {
+	padding : 70px;
+	font-size: 30px;
+	word-break: italic;
+  }
+
+h3{
+	font-size : 15 px;
+	padding : 75 px;
+}
+
+p{
+	height : 200 px;
+	width : 300 px;
+	font-size : 50 px;
+}
+  
+.child1{
+	padding: 10px;
+	
+	flex: 1;
+	align-self: flex-start;
+}
+.chlid2{
+	padding: 10px;
+	width: 100px;
+}
+.chlid3{
+	padding: 10px;	
+	width: 100px;
+}
+.chlid4{
+	padding: 10px;	
+	width: 100px;
+}
+.chlid5{
+	padding: 10px;	
+	width: 250px;
+}
+.learn
+{
+	padding-left: 0 px;
+	display : flex;
+	justify-content : center;
+	font-size : 25 px;
+	border-bottom-color : red;
+	width : 300px;
+	height : 50 px;
+	border : 3 px solid red;
+	border-radius : 20 px;
+	border-left : 30 px;
+	margin-left : 30 px;
+	align-items : center;
+
+
+}

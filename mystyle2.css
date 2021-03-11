@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.parent{
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: whitesmoke;
+	padding:10px;
+	justify-content:space-between; 
+	
+}
+
+.chlid2{
+	padding: 10px;
+	width: 100px;
+}
+.chlid3{
+	padding: 10px;	
+	width: 100px;
+}
+.chlid4{
+	padding: 10px;	
+	width: 100px;
+}
+.chlid5{
+	padding: 10px;	
+	width: 100px;
+}
+.chlid6{
+	padding: 10px;	
+	width: 100px;
+}
+.chlid7{
+	padding: 10px;	
+	width: 250px;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 25 px;
+  padding :20 px;
+  font-style : italic;
+}
+h4 {
+    font-size: 15 px;
+    padding : 60 px;
+}
+
+.row {
+    clear: both;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 75%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}

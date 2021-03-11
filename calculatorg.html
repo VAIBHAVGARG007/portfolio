@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Calculator</title>
+
+     <style>
+    a{
+        text-decoration: none;
+        color : black;
+    }
+    .container
+    {
+        height : 800px;
+    }
+    .inputcontainer
+    {
+        display :flex;
+        flex-direction : column;
+        width : 40%;
+        margin : auto;
+    }
+    .input 
+    {
+        margin-bottom: 2rem;
+        padding : 2px;
+    }
+
+    input[type="button"] 
+         { 
+         background-color:yellow; 
+         color: black; 
+         border: solid black 2px; 
+         width:100% 
+         }
+     </style>
+</head>
+<body>
+    <Body background="calculatorg.jpg"> 
+    
+    <div class="container">
+        <h1 style="text-align : center">My Calculator</h1>
+         <div class="inputcontainer">
+             <input id ="number1" class = "input" placeholder = "Enter Number 1"/>
+             <input id = "number2" class = "input" placeholder = "Enter Number 2"/>
+            
+             <tr > 
+                <td><input class = "input" type="button" value=" + " onclick="dis('+')"/> </td> 
+                <td><input class = "input" type="button" value=" - " onclick="dis('-')"/> </td> 
+                <td><input class = "input" type="button" value=" * " onclick="dis('*')"/> </td> 
+                <td><input class = "input" type="button" value=" / " onclick="dis('/')"/> </td> 
+             </tr>
+
+             <p style = "background-color:tomato;" id = "result"></p>
+         </div>
+       
+    </div>
+
+    <script>
+
+        function dis(val)
+        {
+          const num1 = parseFloat(document.querySelector('#number1').value);
+          const num2 = parseFloat(document.querySelector('#number2').value);
+          const resultspan = document.querySelector('#result');
+          
+          if ( val == '+')
+          {
+            resultspan.innerHTML = (num1 + num2).toFixed(2);
+          }
+          else if(val == '-')
+          {
+            resultspan.innerHTML = (num1 - num2).toFixed(2);
+          }
+          else if(val == '*')
+          {
+            resultspan.innerHTML = (num1 * num2).toFixed(2);
+          }
+          else
+          {
+            resultspan.innerHTML = (num1 / num2).toFixed(2);
+          }
+
+          resultspan.style.color = "black"; 
+          
+        }
+    </script>
+   
+</body>
+</html>
